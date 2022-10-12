@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <style>
+            .tlediv
+            {
+                border: 2px solid black;
+                height: 300px;
+                width: 310px;
+                margin-left: 33%;
+                margin-top: 3px;
+                
+            }
+            #inputbox
+            {
+                width: 98.5%;
+                margin-left: 2px;
+                height:83px ;
+                border: 1px solid black;
+                font-size: 40px;
+                margin-top: 2px;                
+            }
+            button
+            {
+                
+                width: 73px;
+                height: 49px;
+                text-align: center;
+            }
+         
+
+        </style>
+        <script>
+        
+            // var b="";
+            // function display(a)
+            // {
+            //     if(a<10)
+            //     {
+            //         b+=a;
+            //     document.getElementById("inputbox").value=b;
+            //     }   
+            //     if(a==10)
+            //     {
+            //         b+='+';
+            //         document.getElementById("inputbox").value=b;
+            //     }
+            //     if(a==11)
+            //     {
+            //         b+='-';
+            //         document.getElementById("inputbox").value=b;
+            //     }
+            //     if(a==12)
+            //     {
+            //         b+='*';
+            //         document.getElementById("inputbox").value=b; 
+            //     }
+            //     if(a==15)
+            //     {
+            //         b+='/';
+            //         document.getElementById("inputbox").value=b; 
+            //     }
+            //     if(a==14)
+            //     {
+            //        var result= eval(b);
+            //         document.getElementById("inputbox").value=result; 
+            //         b=result;
+            //     }
+            //     if(a==13)
+            //     {
+            //         b=0;
+            //         document.getElementById("inputbox").value=b; 
+            //     }
+    
+            // }
+                // var b=1;
+                // var a=2;
+                // a=a+b;
+                // a+=b
+                function display(a)
+                {
+                   document.getElementById("inputbox").value+=a;
+
+                }
+                function equals()
+                {
+                    var data=document.getElementById("inputbox").value;
+                    document.getElementById("inputbox").value=eval(data);
+                }
+                function clr()
+                {
+                    document.getElementById("inputbox").value='';
+                }
+        </script>
+    </head>
+    <body>
+        <div class="tlediv">
+            <input type="text" id="inputbox">
+        <tle class="tledata">
+           
+            <tr>
+                <td><button id="mybtn" onclick="display(1)">1</button></td>
+                <td><button id="mybtn" onclick="display(2)">2</button></td>
+                <td><button id="mybtn" onclick="display(3)">3</button></td>
+                <td><button id="mybtn" onclick="display('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="mybtn" onclick="display(4)">4</button></td>
+                <td><button id="mybtn" onclick="display(5)">5</button></td>
+                <td><button id="mybtn" onclick="display(6)">6</button></td>
+                <td><button id="mybtn" onclick="display('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="mybtn" onclick="display(7)">7</button></td>
+                <td><button id="mybtn" onclick="display(8)">8</button></td>
+                <td><button id="mybtn" onclick="display(9)">9</button></td>
+                <td><button id="mybtn" onclick="display('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="mybtnlear" onclick="clr()">C</button></td>
+                <td><button id="mybtn" onclick="display(0)">0</button></td>
+                <td><button id="mybtn" onclick="equals()">=</button></td>
+                <td><button id="mybtn" onclick="display('/')">/</button></td>
+            </tr>
+        
+        </tle>
+    </div>
+  
+    </body>
+</html>

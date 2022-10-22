@@ -1,0 +1,8 @@
+.Task1
+{
+  background-color: rgb(201, 199, 195);
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

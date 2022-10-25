@@ -1,6 +1,6 @@
 .Task1
 {
-  background-color: blanchedalmond;
+  background-color: #b9b4ac;;
   font-size: 35px;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: cadetblue;
+  background-color: #068db1e0;
 }
 .button
 {
@@ -74,5 +74,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #c2dcf3;
+  background-color: #adc5b0;
 }
